@@ -4,9 +4,9 @@ import numpy as np
 data = np.loadtxt("BTE.WP3")
 
 f=open("separated-BTE.WP3", "w")
-nmodes = 60
+nmodes = 60 # system dependent # (no. of atoms * 3)
 m,n = np.shape(data)
-irr_qpts = 728
+irr_qpts = 728 # no. of irreproducible qpoints in BZ # get it from BTE.qpoints file.
 print(m,n)
 count = 0
 for i in range(0,m):
